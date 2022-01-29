@@ -4,9 +4,9 @@
 <ul>
     @foreach($comics as $comic)
     <li>
-       {{-- <a href="route{{}}"> --}}
+       <a href="{{route('details', $comic -> id)}}">
             {{ $comic -> title }}
-        {{-- </a> --}}
+        </a>
     </li>
     @endforeach
 </ul>
